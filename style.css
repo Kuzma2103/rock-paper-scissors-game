@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0080;
+    color: #fff;
+    font-family: 'Chilanka', cursive;
+}
+
+header {
+    background: #8881c7;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 30px;
+    border-bottom: 3px solid #fff;
+}
+
+.score-board {
+    margin: 50px auto;
+    padding: 15px 20px;
+    font-size: 50px;
+    text-align: center;
+    border: 3px solid #fff;
+    border-radius: 4px;
+    width: 200px;
+    position: relative;
+}
+
+.badge {
+    background: #ff4f4f;
+    color: #fff;
+    padding: 2px 10px;
+    font-size: 14px;    
+}
+
+#user-label {
+    position: absolute;
+    top: 24px;
+    left: -25px;
+}
+
+#computer-label {
+    position: absolute;
+    top: 24px;
+    right: -25px;
+}
+
+.result {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.choices {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.choices img {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+}
+
+.choice {
+    border: 4px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 16px;
+    transition: all .3s ease-out;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background: #080052;
+}
+
+#action-message {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* CLASSES FOR WIN LOSE AND DRAW */
+.green-glow {
+    background-color: #70ffbd !important;
+    border: 4px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow {
+    background-color: #ff617b !important;
+    border: 4px solid #fc121b;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.grey-glow {
+    background-color: #949494 !important;
+    border: 4px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 600px) {
+    
+    header h1 {
+        font-size: 32px;
+    }
+
+    .result p {
+        font-size: 26px;
+        padding: 0 14px;
+    }
+
+}
